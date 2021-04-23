@@ -1,0 +1,29 @@
+<html>
+<meta charset="utf-8" />
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="toolbar">
+		<h1>Iterative deepening search</h1>
+		<select id="selectedAlgorithm" class="toolbar-btn" onchange="resetVisualization()" selected="dfs">
+			<option value="iddfs">Iterative deepening search</option>>
+		</select>
+		<button id="prevStep" class="toolbar-btn" onclick="stepTransition(-1)">←</button>
+		<button id="nextStep" class="toolbar-btn" onclick="stepTransition(1)">→</button>
+		<button id="reset" class="toolbar-btn" onclick="resetVisualization()">Reset</button>
+		<button id="addNode" class="toolbar-btn" onclick="toggleState(this, STATES.ADD_NODE)">➕ node</button>
+		<button id="removeNode" class="toolbar-btn" onclick="toggleState(this, STATES.DELETE_NODE)">➖ node</button>
+		<button id="addEdge" class="toolbar-btn" onclick="toggleState(this, STATES.ADD_EDGE)">➕ edge</button>
+		<button id="selectStart" class="toolbar-btn" onclick="toggleState(this, STATES.SELECT_START)">Select start</button>
+		<button id="selectGoal" class="toolbar-btn" onclick="toggleState(this, STATES.SELECT_GOAL)">Select goal(s)</button>
+		<div id="algorithmDetails" style="display: inline;"></div>
+		<div id="logger"></div>
+	</div>
+	<br/>
+</body>
+<script src="../lib/d3.min.js"></script>
+<script src="search.js"></script>
+<script src="boilerplate.js"></script>
+<script src="visualize.js"></script>
+</html>
