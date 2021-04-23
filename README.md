@@ -2,11 +2,9 @@
 
 ## What is this?
 This repository contains visualizations (traces and additional notes) of several search algorithms:  
-- depth-first search (DFS)
-- breadth-first search (BFS)
+
 - iterative deepening (IDDFS)
-- A*
-- recursive best-first search (RBFS)
+
 
 There is also accompanying logic for drawing your own graph, so that you can easily check how these algorithms would 
 work on your example.  
